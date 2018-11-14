@@ -8,14 +8,13 @@
 function showDef(str) {
     
     if (str.length == 0) { 
-        document.getElementById("dfn").innerHTML = "";
+        document.getElementById("result").innerHTML = "";
         return;
     } else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var response = this.responseText;
-                alert(response);
+                document.getElementById("result").innerHTML = this.responseText;
             }
         }
         xmlhttp.open("GET", "request.php?q="+str, true);
@@ -26,7 +25,6 @@ function showDef(str) {
 
 
 </script>
-
 
 
 <body>
@@ -43,6 +41,7 @@ function showDef(str) {
 
 </form>
 
-<p>Definition: <span id="dfn"></span></p>
+<div id = "result"><p>Definition: </p></div>
+ 
 </body>
 </html>
