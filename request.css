@@ -23,12 +23,19 @@ p{
     font-family:  sans-serif;
 }
 
-
+#defin{
+    font-family: Arial;
+    font-size: 20px;
+}
 
 
 input[placeholder]{
     font-family: monospace;
     font-size: 14px;
+}
+
+button{
+    font-family: monospace;
 }
 
 button:hover {
