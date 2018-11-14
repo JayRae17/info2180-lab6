@@ -18,12 +18,27 @@ h1{
     
 }
 
-button{
-    margin-left: 50%;
-    background-color: Gainsboro;
-   font-size: 20px;
-   font-family: monospace;
-   font-family:  sans-serif;
-   border-radius: 50px;
+p{
+    font-family: monospace;
+    font-family:  sans-serif;
+}
+
+
+
+
+input[placeholder]{
+    font-family: monospace;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: LightBlue;
+    cursor: pointer;
     
+}
+
+input[type=text]{
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 11px;
 }
